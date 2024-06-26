@@ -2,6 +2,7 @@ from mazes.maze_generators.base_maze import Maze
 from mazes.maze_generators.rdfs_recursive import rdfs_parse
 
 from mazes.visualization.maze_to_text import maze_to_text
+from mazes.visualization.maze_to_svg import render_maze_to_svg
 
 
 if __name__ == "__main__":
@@ -12,3 +13,5 @@ if __name__ == "__main__":
     rdfs_parse(start_cell)
 
     maze_to_text(maze, export=True)
+
+    render_maze_to_svg(maze)
