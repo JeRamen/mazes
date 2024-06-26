@@ -91,3 +91,8 @@ for m_line in maze.maze_:
     text_maze += "".join([CELL_TYPES[ct][1] for ct in m_line_cell_types])
     text_maze += "\n"
 ```
+
+#### SVG visualizer
+
+The same as with text visualizer, having cell type, we can draw each cell separately, using SVG Path
+'d' attribute, with 'M', 'L', 'C' and 'A' path commands.
