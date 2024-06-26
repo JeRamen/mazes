@@ -12,6 +12,6 @@ if __name__ == "__main__":
 
     rdfs_parse(start_cell)
 
-    maze_to_text(maze, export=True)
+    # maze_to_text(maze, export=True)
 
     render_maze_to_svg(maze)
